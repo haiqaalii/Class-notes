@@ -1,0 +1,109 @@
+Linux Terminal Commands
+
+1. **pwd** (Print Working Directory)
+   - Displays the current directory you're working in.
+
+2. **ls** (List)
+   - Usage:ls [options] [directory]
+   - Lists the contents of a directory. It shows files and directories in the current directory.
+
+3. **cd** (Change Directory)
+   - Usage:cd [directory]
+   - Changes the current working directory.
+
+4. **mkdir** (Make Directory)
+   - Usage:mkdir [directory]
+   - Creates a new directory.
+
+5. **rmdir** (Remove Directory)
+   - Usage:rmdir [directory]
+   - Removes an empty directory.
+
+6. **rm** (Remove)
+   - Usage: rm [file]
+   - Deletes a file. Use rm -r [directory] to remove a directory and stuff inside it.
+
+7. **cp** (Copy)
+   - Usage:cp [source] [destination]
+   - Copies a file or directory.
+
+8. **mv** (Move/Rename)
+   - Usage:mv [source] [destination]
+   - Moves or renames files and directories.
+
+9. **cat** 
+   - Usage:cat [file]
+   - Shows you the contents of a file.
+
+10. **nano** (Text Editor)
+    - Usage:nano [file]
+    - Opens a text editor.
+
+11. **touch** (Create New File)
+    - Usage:touch [file]
+    - Creates an empty file. 
+
+12. **chmod** (Change File Permissions)
+    - Usage:chmod [permissions] [file]
+    - Changes the permissions of a file or directory.
+
+13. **chown** (Change Ownership)
+    - Usage:chown [user] [group] [file]
+    - Changes the ownership of a file or directory.
+      
+14. **ps** (Process Status)
+    - Usage:ps
+    - shows the list of running processes.
+   
+15. **df** (Disk Free)
+    - Usage:df
+    - Shows disk space usage of mounted file systems.
+ 
+16. **du** (Disk Usage)
+    - Usage:du [directory]
+    - Shows disk usage of files and directories.
+
+17. **top** (Task Manager)
+    - Usage:top
+    - Shows you git information about system processes, memory, and CPU usage.
+   
+18. **man** (Manual)
+    - Usage:man [command]
+    - Shows you a manual page for a command.
+
+19. **sudo** (Superuser)
+    - Usage:sudo [command]
+
+20. **apt** (Package Manager)
+    - Usage:apt [command]
+    - Used for installing, updating, and removing software packages.
+
+21. **echo** (Print Text)
+   - Usage:echo [text]
+   - Shows text or variables to the terminal.
+   - Example: echo "Hello World"
+
+22. **head** (View Beginning of File)
+   - Usage:head [file]
+   - Shows the first 10 lines of a file. You can change the number of lines with the `-n` option.
+
+23. **find** (Search for Files)
+   - Usage:find [directory] -name [pattern]
+   - Searches for files and directories in a specific directory.
+
+24. **history** (Command History)
+   - Usage:history
+   - Shows a list of commands you used before.
+
+25. **wget** (Download Files)
+   - Usage:wget [URL]
+   - Downloads files.
+
+26. **curl** (Transfer Data)
+   - Usage:curl [URL]
+   - Transfers data to or from a server using various protocols like HTTP, FTP, etc.
+     
+27. **zip** / **unzip** (Compress and Extract ZIP Files)
+   - Usage:
+     - zip [archive_name.zip] [file]: Compress files into a ZIP archive.
+     - unzip [archive_name.zip]: Extract files from a ZIP archive.    
