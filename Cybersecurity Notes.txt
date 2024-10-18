@@ -2,17 +2,26 @@ Linux Terminal Commands
 
 1. **pwd** (Print Working Directory)
    - Displays the current directory you're working in.
+   Example; pwd 
+   /home/haiqaali_9
 
 2. **ls** (List)
    - Usage:ls [options] [directory]
-   - Lists the contents of a directory. It shows files and directories in the current directory.
+   - Lists the contents of a directory. It displays files and directories in the current directory.
+   Example; ls
+   Desktop Pictures New_File
 
 3. **cd** (Change Directory)
    - Usage:cd [directory]
    - Changes the current working directory.
+   Example; cd SecondDirectory
+   haiqaali_9@reesesheart:~/SecondDirectory$ 
+   Example to go to the home directory; cd
+   haiqaali_9@reesesheart:~$ 
 
 4. **mkdir** (Make Directory)
-   - Usage:mkdir [directory]
+   - Creates a new directory.
+   - Usage:mkdir [Directory_Name]
    - Creates a new directory.
 
 5. **rmdir** (Remove Directory)
