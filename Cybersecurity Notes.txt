@@ -55,6 +55,19 @@ Linux Terminal Commands
 12. **chmod** (Change File Permissions)
     - Usage:chmod [permissions] [file]
     - Changes the permissions of a file or directory.
+Add execute permission to the owner: chmod u+x [filename]
+Remove write permission for a group: chmod g-w filename
+Set read only permission for others: chmod o=r filename
+Give full permissions to owner, read and execute to group, and read to others: chmod 754 filename
+This breaks down to the following:
+
+The digits break down as:
+
+7 (owner): Read (4) + Write (2) + Execute (1) = 7
+5 (group): Read (4) + Execute (1) = 5
+4 (others): Read = 4
+
+This will display the permissions in the format: -rwxr-xr--
 
 13. **chown** (Change Ownership)
     - Usage:chown [user] [group] [file]
@@ -63,7 +76,11 @@ Linux Terminal Commands
 14. **ps** (Process Status)
     - Usage:ps
     - shows the list of running processes.
-   
+Example: ps
+         PID TTY          TIME CMD
+         2496 pts/0    00:00:00 bash
+         3242 pts/0    00:00:00 ps
+
 15. **df** (Disk Free)
     - Usage:df
     - Shows disk space usage of mounted file systems.
@@ -116,3 +133,93 @@ Linux Terminal Commands
    - Usage:
      - zip [archive_name.zip] [file]: Compress files into a ZIP archive.
      - unzip [archive_name.zip]: Extract files from a ZIP archive.    
+
+What is Bash Scripting?
+A bash script is a plain which contains a series of commands to be exucuted by the Bash Shell. it allows users to
+automate and perform a series of commands without having to maunally enter them.
+
+Steps to Writing a bash Script:
+1. Create a text file and make it end with .sh extension. Example: Bashscript.sh
+2. Start the script with the shebang to specify the interperter. Example: #!/bin/bash
+3. Type out the commands just like they would be typed out in a terminal.
+
+Using variables in Bash Script Example:
+
+#!/bin/bash
+# Defining variables
+
+NAME="Alice"
+echo "Hello, $NAME!"
+
+Example of a Bash Script:
+
+#!/bin/bash
+# A simple Bash script
+
+echo "Hello, World!"
+
+Instructions for creating a Test script:
+
+#!/bin/bash
+# Script to check if a directory exists and create it if not
+
+echo "Enter directory name: "
+read DIR
+
+if [ -d "$DIR" ]; then
+  echo "Directory $DIR already exists."
+else
+  echo "Directory $DIR does not exist. Creating it now."
+  mkdir "$DIR"
+  echo "Directory $DIR created."
+fi
+
+How this Bash Script works?
+1. The script asks the user for a directory name.
+2. It checks if the directory exists with [ -d "$DIR" ].
+3. If the directory exists, it prints a message. If not, it creates the directory using mkdir.
+
+To display the disk space usage use the following command: df -h
+
+System Monitering:
+System monitoring is ensuring the optimal systems reliability and preformance. It helps with early detection of any issues.
+Commands:
+The command **top** displays the cpu usage, system processes and memory usage.
+
+**htop**
+This command shows a colorful, interactive overview of CPU, memory usage, and processes.
+Navigate through processes using arrow keys; press F10 or q to quit.
+
+How to install htop? ; Run the following command: **sudo apt install htop**
+
+The following command **uptime** displays the time of how long the system has been running for.
+MORE COMMANDS:
+1. **journalctl**
+   -Usage: To display all the system logs.
+
+2. **journalctl -f**
+   -Usage: To view recent logs (with real-time updates)
+
+3. **journalctl -b**
+   -Usage: To display the last boot's logs.
+
+4. **journalctl -p err**
+   -Usage: To view system errors and warnings:
+
+5. **cat /var/log/syslog**
+   -Usage: To view the system logs.
+
+6. **cat /var/log/auth.log**
+   -Usage: Ti view the authentication logs.
+
+7. **tail -n 20 /var/log/syslog**
+   -Usage: To display the last few lines of a log
+
+
+
+
+
+
+
+
+
