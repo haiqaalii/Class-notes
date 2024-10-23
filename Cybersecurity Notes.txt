@@ -215,7 +215,23 @@ MORE COMMANDS:
 7. **tail -n 20 /var/log/syslog**
    -Usage: To display the last few lines of a log
 
+What are Basic Security Prinicples in Linux?
+1. Least Privilage- Users and processes should only have the minimum permissions necessary to perform their tasks.
+2. File and Directory Permissions- Each file or directory has ownership and permission settings that determine who can read, write, or execute it.
+3. User and Group Management- Carefully managing who can log in to the system and what privileges they have is essential.
+4. Regular Updates- Keeping the system and installed software up-to-date to mitigate known vulnerabilities.
+5. Firewalls- Controlling incoming and outgoing network traffic to limit exposure to external attacks.
 
+FILE PERMISSIONS IN LINUX:
+Read (r): Allows reading the file or listing the contents of a directory.
+Write (w): Allows modifying a file or adding/removing files in a directory.
+Execute (x): Allows running a file as a program or entering a directory.
+
+Owner (user who owns the file)
+Group (group of users who can access the file)
+Others (anyone else)
+
+You can view file permissions using the command **ls -l [FileName]** The output usually looks like this; -rwxr-xr--
 
 
 
