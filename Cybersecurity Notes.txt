@@ -233,6 +233,32 @@ Others (anyone else)
 
 You can view file permissions using the command **ls -l [FileName]** The output usually looks like this; -rwxr-xr--
 
+The following command gives the owner rwx permissions, and the group and others r-x permissions: chmod 755 filename
+
+This floowing command gives the execute permission to the owner of the file: chmod +x filename
+
+To change the owner of the file: sudo chown newowner filename
+
+To change the owner and the group: sudo chown newowner:newgroup filename
+
+How to view all the file permissions: ls -l /path/to/file
+
+USER MANAGMENT:
+To create a new user: sudo adduser username
+To add a user in to a group: sudo usermod -aG groupname username
+To delete a user: sudo deluser username
+
+ASIGNING PERMISSIONS TO USERS:
+To change the group ownership of a folder: sudo chown :groupname /path/to/folder
+To adjust the folder permissions: sudo chmod 770 /path/to/folder
+
+FIREWALL BASICS:
+To enable the firewall: sudo ufw enable
+To allow traffic on a specific port (example; SSH on port 22): sudo ufw allow 22
+To deny traffic on a specific port: sudo ufw deny 22
+To veiw the status of UFW: sudo ufw status
+
+How to restrict access to only the owner: chmod 700 /path/to/secure-folder
 
 
 
