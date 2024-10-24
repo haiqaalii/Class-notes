@@ -151,6 +151,11 @@ Using variables in Bash Script Example:
 NAME="Alice"
 echo "Hello, $NAME!"
 
+To exit a nano file and save it you do the following:
+Ctrl O To save the file and will bring you to changing the name
+Enter  To save the name and file
+Ctrl X To exit the nano file and go back to the terminal.
+
 Example of a Bash Script:
 
 #!/bin/bash
@@ -259,6 +264,7 @@ To deny traffic on a specific port: sudo ufw deny 22
 To veiw the status of UFW: sudo ufw status
 
 How to restrict access to only the owner: chmod 700 /path/to/secure-folder
+
 
 
 
